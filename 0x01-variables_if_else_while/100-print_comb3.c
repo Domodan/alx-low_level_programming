@@ -16,8 +16,10 @@ int main(void)
 		while (j < 58)
 		{
 			if (i == j)
+			{
 				j++;
 				continue;
+			}
 			putchar(i);
 			putchar(j);
 			if (i == 56 && j == 57)
