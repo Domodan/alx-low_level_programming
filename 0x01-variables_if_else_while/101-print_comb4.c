@@ -37,3 +37,6 @@ int main(void)
 		} while (j < 58);
 		i++;
 	} while (i < 58);
+	putchar('\n');
+	return (0);
+}
