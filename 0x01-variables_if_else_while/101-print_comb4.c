@@ -18,7 +18,10 @@ int main(void)
 			while (k < 58)
 			{
 				if (i == j || j == k || i == k)
+				{
+					k++;
 					continue;
+				}
 				putchar(i);
 				putchar(j);
 				putchar(k);
