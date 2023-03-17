@@ -12,6 +12,7 @@ int main(void)
 	int i = 48, j;
 
 	do {
+		j = i;
 		while (j < 58)
 		{
 			if (i == j)
@@ -27,7 +28,9 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			j++
 		}
+		i++
 	} while (i < 58);
 	putchar('\n');
 	return (0);
