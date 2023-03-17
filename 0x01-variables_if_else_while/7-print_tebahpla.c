@@ -13,5 +13,6 @@ int main(void)
 	do {
 		putchar(alphabet--);
 	} while (alphabet >= 'a');
+	putchar('\n');
 	return (0);
 }
