@@ -2,7 +2,8 @@
 /**
  * main - Entry point
  *
- * Description: The program prints all possible combinations of single-digit numbers
+ * Description: The program prints all possible combinations of
+ * single-digit numbers
  *
  * Return: 0 (Success)
  */
