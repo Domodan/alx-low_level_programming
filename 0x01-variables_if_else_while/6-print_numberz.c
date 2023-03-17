@@ -13,5 +13,6 @@ int main(void)
 	do {
 		putchar(i++);
 	} while (i < 58);
+	putchar('\n');
 	return (0);
 }
