@@ -1,23 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - print alphabet in lowercase
+ * main - check the code
  *
- * Description: The program prints the alphabet, in lowercase 10 times
- *
- * Return: void
+ * Return: 0 always
  */
-void print_alphabet_x10(void)
+int main(void)
 {
-	int alphabet, count;
-
-	count = 0;
-	while (count < 10)
-	{
-		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-		{
-			_putchar(alphabet);
-		}
-		count++;
-		_putchar('\n');
-	}
+	print_alphabet_x10();
+        return (0);
 }
