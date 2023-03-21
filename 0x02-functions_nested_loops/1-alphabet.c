@@ -1,11 +1,18 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet - print alphabet in lowercase
  *
- * Return: 0 always
+ * Description: The program prints the alphabet, in lowercase
+ *
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char alphabet = 'a';
+
+        do {
+                _putchar(alphabet);
+                alphabet++;
+        } while (alphabet <= 'z');
+        _putchar('\n');
 }
