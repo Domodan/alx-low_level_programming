@@ -5,12 +5,12 @@
 > 0. 98 Battery st.
 > 1. Don't swap horses in crossing a stream
 > 2. This report, by its very length, defends itself against the risk of being read
-> 3. The numbers speak for themselves
-> 4. I believe in numbers and signs
-> 5. Numbers constitute the only universal language
-> 6. The shortest distance between two points is a straight line
-> 7. I feel like I am diagonally parked in a parallel universe
-> 8. You are so much sunshine in every square inch
+> 3. I do not fear computers. I fear the lack of them
+> 4. I can only go one way. I've not got a reverse gear
+> 5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes
+> 6. Half the lies they tell about me aren't true
+> 7. Winning is only half of it. Having fun is the other half
+> 8. Arrays are not pointers
 > 9. Fizz-Buzz
 > 10. Triangles
 > 11. The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic
