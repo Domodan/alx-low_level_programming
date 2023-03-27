@@ -8,7 +8,7 @@
  */
 void puts_half(char *str)
 {
-	int length_of_the_string = 0, n, i;
+	int length_of_the_string = 0, n;
 
 	while (str[length_of_the_string] != '\0')
 		length_of_the_string++;
