@@ -19,7 +19,8 @@ int wildcmp(char *s1, char *s2)
 
 	/**
 	 * If string 2 is a character, and s1 doesn't match,
-	 * strings don't match */
+	 * strings don't match
+	 */
 	if (*s2 != '*' && *s1 != *s2)
 		return (0);
 
