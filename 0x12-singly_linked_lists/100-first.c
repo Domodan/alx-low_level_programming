@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print - prints before main
+ * print_before_main - prints before main
  *
  * Return: Nothing
  */
