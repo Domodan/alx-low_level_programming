@@ -1,18 +1,27 @@
-section .data             ; Data section
-    hello db 'Hello, Holberton', 0xA   ; Define a string 'Hello, Holberton' with a newline character 0xA
-section .text             ; Text section
-    global main           ; Declare the entry point of the program
-    extern printf         ; Declare an external function printf
+;--------------------------------------------------------------------------------------
+;
+; A 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+; Compiled using nasm and gcc.
+; nasm -f elf64 101-hello_holberton.asm && gcc 101-hello_holberton.o -o hello
+;
+;--------------------------------------------------------------------------------------
 
-main:                     ; Entry point of the program
-    push rbp             ; Save the base pointer to the stack
-    mov rbp, rsp         ; Set the stack pointer as the base pointer
-    sub rsp, 16          ; Allocate 16 bytes of memory on the stack for storing function arguments
-    lea rdi, [hello]     ; Load the address of the string 'Hello, Holberton' into the rdi register
-    xor eax, eax         ; Set the return value to 0
-    call printf          ; Call the printf function to print the string
-    add rsp, 16          ; Deallocate the memory on the stack
-    mov rsp, rbp         ; Restore the stack pointer from the base pointer
-    pop rbp              ; Restore the base pointer from the stack
-    ret                  ; Return from the function
+section .data
+format db "%s", 10, 0
+message db "Hello, Holberton", 0
 
+section .text
+extern printf ;C function to be called
+global main ;main function
+
+main:
+	push rbp
+	mov rdi, format
+	mov rsi, message
+	mov rax, 0 ;can be xor rax, rax
+	call printf ;call C function.
+
+	pop rbp ;restor stack
+
+	mov rax, 0 ;normal, no error, return value
+	ret ;return
