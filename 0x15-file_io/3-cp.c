@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 
 	if (fd_r < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
+				argv[1]);
 		exit(98);
 	}
 
@@ -33,14 +34,16 @@ int main(int argc, char *argv[])
 	{
 		if (fd_w < 0 || write(fd_w, buf, r) != r)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
+					argv[2]);
 			close(fd_r);
 			exit(99);
 		}
 	}
 	if (r < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
+				argv[1]);
 		exit(98);
 	}
 
@@ -50,9 +53,11 @@ int main(int argc, char *argv[])
 	if (a < 0 || b < 0)
 	{
 		if (a < 0)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",
+					fd_r);
 		if (b < 0)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",
+					fd_w);
 		exit(100);
 	}
 
